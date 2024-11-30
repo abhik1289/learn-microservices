@@ -32,6 +32,7 @@ app.post('/posts/:id/comments', async (req, res) => {
     res.status(201).json({ comments });
 });
 
+
 app.post("/events", (req, res) => {
     console.log(req.body.type);
     res.status(200).json({});
